@@ -1,0 +1,72 @@
+@use 'sass:map';
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+// reset
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Azeret Mono', 'sans-serif';
+}
+
+:root {
+  --bg-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: toRem(1140);
+  margin: 0 auto;
+}
+
+// html {
+//   scroll-behavior: smooth;
+//   --webkit-scroll-behavior: smooth;
+//   --moz-scroll-behavior: smooth;
+// }
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  width: 100%;
+  // scroll-behavior: smooth;
+  // scroll-behavior: smooth;
+  // --webkit-scroll-behavior: smooth;
+  // --moz-scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  font-size: toRem(20);
+  font-weight: map.get($font-weight, Regular);
+  padding: toRem(10) toRem(20);
+  border-radius: toRem(8);
+  background-color: #212020;
+  // color: inherit;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  gap: toRem(24);
+
+  h1 {
+    font-size: toRem(32);
+    font-weight: map.get($font-weight, ExtraBold);
+  }
+}
+
+a {
+  text-decoration: none;
+}

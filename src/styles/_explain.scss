@@ -1,0 +1,84 @@
+@use 'sass:map';
+
+.explain {
+  padding-block: toRem(74);
+
+  .container {
+    background-color: #fafafb;
+    padding: toRem(80) toRem(96);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(35);
+    text-align: center;
+
+    h1 {
+      font-size: toRem(32);
+      font-weight: map.get($font-weight, ExtraBold);
+    }
+    p {
+      font-size: toRem(16);
+    }
+  }
+
+  &__item__list{
+    display: flex;
+    flex-direction: column;
+    gap: toRem(30);
+  }
+
+  &__item {
+    display: flex;
+    gap: toRem(30);
+    align-items: center;
+    justify-content: space-between;
+    padding: toRem(48);
+    background: linear-gradient(to left, #ffffff, #ffffff00);
+    border-radius: toRem(16);
+
+    .banner {
+      width: toRem(240);
+      height: toRem(240);
+    }
+    .details {
+      $color1: #3e434e;
+      $color2: #0d1321;
+
+      color: $color1;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: start;
+      // gap: toRem(16);
+
+      h1 {
+        font-size: toRem(24);
+        font-weight: map.get($font-weight, Bold);
+      }
+      p {
+        font-size: toRem(16);
+        color: $color2;
+        margin-top: toRem(16);
+      }
+      a {
+        display: inline-block;
+        font-size: toRem(20);
+        font-weight: map.get($font-weight, SemiBold);
+        background-color: transparent;
+        border: toRem(2) solid $color2;
+        color: $color2;
+        border-radius: 0;
+        margin-top: toRem(32);
+        padding: toRem(12) toRem(20);
+      }
+    }
+
+    &:nth-of-type(odd) {
+      background: linear-gradient(to right, #ffffff, #ffffff00);
+      .banner {
+        order: 2;
+      }
+    }
+  }
+}

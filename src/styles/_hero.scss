@@ -1,0 +1,50 @@
+@use 'sass:map';
+
+.hero {
+  // height: 100vh;
+  // background-color: red;
+  background-image: url('/images/Hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: toRem(30);
+
+  &__box {
+    // background-color: red;
+    max-width: toRem(998);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(30);
+  }
+
+  &__programmer {
+    width: toRem(240);
+    img {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    font-size: toRem(48);
+    font-weight: map.get($font-weight, ExtraBold);
+    text-align: center;
+  }
+  &__subtitle {
+    font-size: toRem(16);
+    text-align: center;
+  }
+
+  .cta-btn {
+    font-size: toRem(20);
+    font-weight: map.get($font-weight, SemiBold);
+    text-transform: capitalize;
+    padding: toRem(21) toRem(24);
+    color: #fff;
+    background-color: #0d1321;
+    border-radius: toRem(8);
+  }
+}

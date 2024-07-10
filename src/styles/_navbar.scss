@@ -1,0 +1,29 @@
+@use 'sass:map';
+
+.navbar-nav {
+  // background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: toRem(50);
+  padding-block: toRem(30);
+  color: #0d1321;
+
+  &__brand {
+    font-size: toRem(28);
+    font-weight: map.get($font-weight, ExtraBold);
+    color: inherit;
+  }
+
+  .resume-btn {
+    border: none;
+    font-size: toRem(20);
+    font-weight: map.get($font-weight, SemiBold);
+    padding: toRem(17) toRem(24);
+    border: toRem(1) solid #0d1321;
+    border-radius: toRem(8);
+    background-color: transparent;
+    color: inherit;
+  }
+}
