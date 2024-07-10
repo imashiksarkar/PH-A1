@@ -1,0 +1,78 @@
+@import 'https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap';
+
+/* Reset & Base Styles */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Azeret Mono, 'sans-serif';
+}
+:root {
+  --bg-color: #fff;
+}
+.container {
+  width: 100%;
+  max-width: 71.25rem;
+  margin: 0 auto;
+}
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
+button {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: #212020;
+}
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  gap: 1.5rem;
+}
+.section-heading h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+a {
+  text-decoration: none;
+}
+
+/* Navbar Section */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 3.125rem;
+  padding-block: 1.875rem;
+  color: #0d1321;
+}
+.navbar-nav__brand {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: inherit;
+}
+.navbar-nav .resume-btn {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.0625rem 1.5rem;
+  border: 0.0625rem solid #0d1321;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: inherit;
+}
