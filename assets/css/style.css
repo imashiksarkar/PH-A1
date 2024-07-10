@@ -12,11 +12,11 @@
 :root {
   --bg-color: #fff;
 }
-.container {
-  width: 100%;
-  max-width: 71.25rem;
-  margin: 0 auto;
+
+html{
+  scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--bg-color);
   height: 100vh;
@@ -33,6 +33,14 @@ button {
   border-radius: 0.5rem;
   background-color: #212020;
 }
+
+.container {
+  width: 100%;
+  max-width: 71.25rem;
+  margin: 0 auto;
+}
+
+/* Heading Section */
 .section-heading {
   display: flex;
   flex-direction: column;
