@@ -9,11 +9,8 @@
   box-sizing: border-box;
   font-family: Azeret Mono, 'sans-serif';
 }
-:root {
-  --bg-color: #fff;
-}
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
