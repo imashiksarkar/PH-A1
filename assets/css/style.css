@@ -7,13 +7,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Azeret Mono, 'sans-serif';
+  font-family: 'Azeret Mono', 'sans-serif';
 }
 :root {
-  --bg-color: #fff;
+  --color-light-7: hsl(0, 0%, 100%);
+  --color-light-6: hsl(0, 21%, 80%);
+  --color-light-5: hsl(218, 4%, 64%);
+  --color-light-3: hsl(220, 86%, 97%);
+  --color-light-4: hsl(220, 5%, 75%);
+  --color-light-12: hsl(220, 86%, 97%);
+  --color-light-2: hsl(223, 4%, 67%);
+  --color-light-11: hsl(223, 4%, 67%);
+  --color-light-1: hsl(240, 11%, 98%);
+  --color-light-8: hsl(240, 11%, 98%);
+
+  --color-dark-4: hsl(0, 0%, 0%);
+  --color-dark-2: hsla(0, 0%, 100%, 0);
+  --color-light-9: hsl(0, 2%, 13%);
+  --color-red: hsl(0, 100%, 50%);
+  --color-dark-1: hsl(221, 11%, 27%);
+  --color-dark-10: hsl(221, 11%, 27%);
+  --color-dark-3: hsl(222, 43%, 9%);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -67,7 +84,7 @@ a {
   flex-wrap: wrap;
   row-gap: 3.125rem;
   padding-block: 1.875rem;
-  color: #0d1321;
+  color: var(--color-dark);
 }
 .navbar-nav__brand {
   font-size: 1.75rem;
@@ -79,7 +96,7 @@ a {
   font-size: 1.25rem;
   font-weight: 600;
   padding: 1.0625rem 1.5rem;
-  border: 0.0625rem solid #0d1321;
+  border: 0.0625rem solid var(--color-dark-3);
   border-radius: 0.5rem;
   background-color: transparent;
   color: inherit;
@@ -124,8 +141,8 @@ a {
   font-weight: 600;
   text-transform: capitalize;
   padding: 1.3125rem 1.5rem;
-  color: #fff;
-  background-color: #0d1321;
+  color: var(--color-light);
+  background-color: var(--color-dark);
   border-radius: 0.5rem;
 }
 
@@ -161,7 +178,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 3rem;
-  background: linear-gradient(to left, #fff, #fff0);
+  background: linear-gradient(to left, var(--color-light), var(--color-dark-2));
   border-radius: 1rem;
 }
 .explain__item .banner {
@@ -177,7 +194,7 @@ a {
 }
 .explain__item .details p {
   font-size: 1rem;
-  color: #0d1321;
+  color: var(--color-dark);
   margin-top: 1rem;
 }
 .explain__item .details a {
@@ -185,14 +202,18 @@ a {
   font-size: 1.25rem;
   font-weight: 600;
   background-color: transparent;
-  border: 0.125rem solid #0d1321;
-  color: #0d1321;
+  border: 0.125rem solid var(--color-dark-3);
+  color: var(--color-dark);
   border-radius: 0;
   margin-top: 2rem;
   padding: 0.75rem 1.25rem;
 }
 .explain__item:nth-of-type(odd) {
-  background: linear-gradient(to right, #fff, #fff0);
+  background: linear-gradient(
+    to right,
+    var(--color-light),
+    var(--color-dark-2)
+  );
 }
 .explain__item:nth-of-type(odd) .banner {
   order: 2;
@@ -241,7 +262,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff6f4;
+  background-color: red;
   border-radius: 1rem;
   min-width: 22.75rem;
   gap: 1.5rem;
@@ -255,17 +276,17 @@ a {
   width: max-content;
 }
 .current-target__details .details-box h1 {
-  color: #0d1321;
+  color: var(--color-dark);
   font-size: 1.5rem;
   font-weight: 800;
 }
 .current-target__details .details-box p {
-  color: #0d1321;
+  color: var(--color-dark);
   margin-top: 0.5rem;
 }
 .current-target__details .details-box a {
   display: inline-block;
-  color: #0d1321;
+  color: var(--color-dark);
   font-weight: 700;
 }
 
@@ -287,7 +308,7 @@ a {
   gap: 1.5rem;
   border-radius: 1rem;
   min-width: 22.75rem;
-  border: 0.125rem solid #bcbec2;
+  border: 0.125rem solid var(--color-light-4);
 }
 .next-target__details .details-box figure {
   height: 5.3125rem;
@@ -295,16 +316,16 @@ a {
   width: max-content;
 }
 .next-target__details .details-box h1 {
-  color: #0d1321;
+  color: var(--color-dark);
   font-size: 1.5rem;
   font-weight: 800;
 }
 .next-target__details .details-box p {
-  color: #0d1321;
+  color: var(--color-dark);
   margin-top: 0.5rem;
 }
 .next-target__details .details-box a {
-  color: #0d1321;
+  color: var(--color-dark);
   font-weight: 700;
   display: inline-block;
   margin-top: 1.5rem;
@@ -313,7 +334,7 @@ a {
 /* Feedback Section */
 .feedback {
   margin-top: 3.125rem;
-  color: #fff;
+  color: var(--color-light);
 }
 .feedback .container {
   padding: 4rem 3rem;
@@ -373,8 +394,8 @@ a {
 .feedback form button {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #0d1321;
-  background-color: #fff;
+  color: var(--color-dark);
+  background-color: var(--color-light);
   cursor: pointer;
 }
 
