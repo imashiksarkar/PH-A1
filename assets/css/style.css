@@ -153,11 +153,11 @@ a {
   gap: 1.875rem;
 }
 .explain__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
   gap: 1.875rem;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-items: center;
   padding: 3rem;
   background: linear-gradient(to left, #fff, #fff0);
   border-radius: 1rem;
@@ -165,6 +165,7 @@ a {
 .explain__item .banner {
   width: 15rem;
   height: 15rem;
+  flex-shrink: 0;
 }
 .explain__item .details {
   color: #3e434e;
@@ -234,7 +235,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, max-content));
   grid-auto-rows: min-content;
-  grid-gap: 1.875rem;
+  gap: 1.875rem;
   align-content: center;
 }
 .current-target__details .details-box {
