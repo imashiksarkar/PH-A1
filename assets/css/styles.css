@@ -120,3 +120,73 @@ a {
   background-color: #0d1321;
   border-radius: 0.5rem;
 }
+
+
+/* Explanation Section */
+.explain {
+  padding-block: 4.625rem;
+}
+.explain .container {
+  background-color: #fafafb;
+  padding: 5rem 6rem;
+}
+.explain__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+  text-align: center;
+}
+.explain__header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.explain__header p {
+  font-size: 1rem;
+}
+.explain__item__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.explain__item {
+  display: flex;
+  gap: 1.875rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background: linear-gradient(to left, #fff, #fff0);
+  border-radius: 1rem;
+}
+.explain__item .banner {
+  width: 15rem;
+  height: 15rem;
+}
+.explain__item .details {
+  color: #3e434e;
+}
+.explain__item .details h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.explain__item .details p {
+  font-size: 1rem;
+  color: #0d1321;
+  margin-top: 1rem;
+}
+.explain__item .details a {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: 0.125rem solid #0d1321;
+  color: #0d1321;
+  border-radius: 0;
+  margin-top: 2rem;
+  padding: 0.75rem 1.25rem;
+}
+.explain__item:nth-of-type(odd) {
+  background: linear-gradient(to right, #fff, #fff0);
+}
+.explain__item:nth-of-type(odd) .banner {
+  order: 2;
+}
