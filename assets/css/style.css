@@ -309,7 +309,7 @@ a {
 }
 .feedback .container {
   padding: 4rem 3rem;
-  background-image: url(./assets/images/handshake.jpg);
+  background-image: url('./assets/images/handshake.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
